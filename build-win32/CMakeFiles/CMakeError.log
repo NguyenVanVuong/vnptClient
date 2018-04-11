@@ -1,0 +1,224 @@
+Performing C SOURCE FILE Test WITH_STACK_PROTECTOR failed with the following output:
+Change Dir: /home/vanquan/client/build-win32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_643d0/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_643d0.dir/build.make CMakeFiles/cmTC_643d0.dir/build
+gmake[1]: Entering directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_643d0.dir/src.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -DWITH_STACK_PROTECTOR   -fstack-protector -o CMakeFiles/cmTC_643d0.dir/src.c.obj   -c /home/vanquan/client/build-win32/CMakeFiles/CMakeTmp/src.c
+/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp/src.c: In function 'main':
+/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp/src.c:1:27: warning: unused parameter 'argv' [-Wunused-parameter]
+ int main(int argc, char **argv) { char buffer[256]; return buffer[argc]=0;}
+                           ^
+Linking C executable cmTC_643d0.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_643d0.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_643d0.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_643d0.dir/objects.a @CMakeFiles/cmTC_643d0.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -DWITH_STACK_PROTECTOR    -Wl,--whole-archive CMakeFiles/cmTC_643d0.dir/objects.a -Wl,--no-whole-archive  -o cmTC_643d0.exe -Wl,--out-implib,libcmTC_643d0.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_643d0.dir/linklibs.rsp
+CMakeFiles/cmTC_643d0.dir/objects.a(src.c.obj):src.c:(.text+0x19): undefined reference to `__stack_chk_guard'
+CMakeFiles/cmTC_643d0.dir/objects.a(src.c.obj):src.c:(.text+0x40): undefined reference to `__stack_chk_guard'
+CMakeFiles/cmTC_643d0.dir/objects.a(src.c.obj):src.c:(.text+0x47): undefined reference to `__stack_chk_fail'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_643d0.dir/build.make:99: recipe for target 'cmTC_643d0.exe' failed
+gmake[1]: *** [cmTC_643d0.exe] Error 1
+gmake[1]: Leaving directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_643d0/fast' failed
+gmake: *** [cmTC_643d0/fast] Error 2
+
+Source file was:
+int main(int argc, char **argv) { char buffer[256]; return buffer[argc]=0;}
+Determining if the include file argp.h exists failed with the following output:
+Change Dir: /home/vanquan/client/build-win32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2fed0/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_2fed0.dir/build.make CMakeFiles/cmTC_2fed0.dir/build
+gmake[1]: Entering directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2fed0.dir/CheckIncludeFile.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64    -o CMakeFiles/cmTC_2fed0.dir/CheckIncludeFile.c.obj   -c /home/vanquan/client/build-win32/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp/CheckIncludeFile.c:1:18: fatal error: argp.h: No such file or directory
+ #include <argp.h>
+                  ^
+compilation terminated.
+CMakeFiles/cmTC_2fed0.dir/build.make:65: recipe for target 'CMakeFiles/cmTC_2fed0.dir/CheckIncludeFile.c.obj' failed
+gmake[1]: *** [CMakeFiles/cmTC_2fed0.dir/CheckIncludeFile.c.obj] Error 1
+gmake[1]: Leaving directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_2fed0/fast' failed
+gmake: *** [cmTC_2fed0/fast] Error 2
+
+
+Determining if the function nanosleep exists in the rt failed with the following output:
+Change Dir: /home/vanquan/client/build-win32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_824e5/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_824e5.dir/build.make CMakeFiles/cmTC_824e5.dir/build
+gmake[1]: Entering directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_824e5.dir/CheckFunctionExists.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=nanosleep   -o CMakeFiles/cmTC_824e5.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_824e5.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_824e5.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_824e5.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_824e5.dir/objects.a @CMakeFiles/cmTC_824e5.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=nanosleep    -Wl,--whole-archive CMakeFiles/cmTC_824e5.dir/objects.a -Wl,--no-whole-archive  -o cmTC_824e5.exe -Wl,--out-implib,libcmTC_824e5.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_824e5.dir/linklibs.rsp
+/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/ld: cannot find -lrt
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_824e5.dir/build.make:99: recipe for target 'cmTC_824e5.exe' failed
+gmake[1]: *** [cmTC_824e5.exe] Error 1
+gmake[1]: Leaving directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_824e5/fast' failed
+gmake: *** [cmTC_824e5/fast] Error 2
+
+
+Determining if the function clock_gettime exists in the rt failed with the following output:
+Change Dir: /home/vanquan/client/build-win32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_57a0d/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_57a0d.dir/build.make CMakeFiles/cmTC_57a0d.dir/build
+gmake[1]: Entering directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_57a0d.dir/CheckFunctionExists.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=clock_gettime   -o CMakeFiles/cmTC_57a0d.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_57a0d.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_57a0d.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_57a0d.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_57a0d.dir/objects.a @CMakeFiles/cmTC_57a0d.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=clock_gettime    -Wl,--whole-archive CMakeFiles/cmTC_57a0d.dir/objects.a -Wl,--no-whole-archive  -o cmTC_57a0d.exe -Wl,--out-implib,libcmTC_57a0d.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_57a0d.dir/linklibs.rsp
+/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/ld: cannot find -lrt
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_57a0d.dir/build.make:99: recipe for target 'cmTC_57a0d.exe' failed
+gmake[1]: *** [cmTC_57a0d.exe] Error 1
+gmake[1]: Leaving directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_57a0d/fast' failed
+gmake: *** [cmTC_57a0d/fast] Error 2
+
+
+Determining if the function dlopen exists in the dl failed with the following output:
+Change Dir: /home/vanquan/client/build-win32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_12645/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_12645.dir/build.make CMakeFiles/cmTC_12645.dir/build
+gmake[1]: Entering directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_12645.dir/CheckFunctionExists.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=dlopen   -o CMakeFiles/cmTC_12645.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_12645.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_12645.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_12645.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_12645.dir/objects.a @CMakeFiles/cmTC_12645.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=dlopen    -Wl,--whole-archive CMakeFiles/cmTC_12645.dir/objects.a -Wl,--no-whole-archive  -o cmTC_12645.exe -Wl,--out-implib,libcmTC_12645.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_12645.dir/linklibs.rsp
+/usr/lib64/gcc/i686-w64-mingw32/4.9.2/../../../../i686-w64-mingw32/bin/ld: cannot find -ldl
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_12645.dir/build.make:99: recipe for target 'cmTC_12645.exe' failed
+gmake[1]: *** [cmTC_12645.exe] Error 1
+gmake[1]: Leaving directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_12645/fast' failed
+gmake: *** [cmTC_12645/fast] Error 2
+
+
+Determining if the function fnmatch exists failed with the following output:
+Change Dir: /home/vanquan/client/build-win32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_77285/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_77285.dir/build.make CMakeFiles/cmTC_77285.dir/build
+gmake[1]: Entering directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_77285.dir/CheckFunctionExists.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=fnmatch   -o CMakeFiles/cmTC_77285.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_77285.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_77285.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_77285.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_77285.dir/objects.a @CMakeFiles/cmTC_77285.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=fnmatch    -Wl,--whole-archive CMakeFiles/cmTC_77285.dir/objects.a -Wl,--no-whole-archive  -o cmTC_77285.exe -Wl,--out-implib,libcmTC_77285.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_77285.dir/linklibs.rsp
+CMakeFiles/cmTC_77285.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0xc): undefined reference to `fnmatch'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_77285.dir/build.make:99: recipe for target 'cmTC_77285.exe' failed
+gmake[1]: *** [cmTC_77285.exe] Error 1
+gmake[1]: Leaving directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_77285/fast' failed
+gmake: *** [cmTC_77285/fast] Error 2
+
+
+Determining if the function timegm exists failed with the following output:
+Change Dir: /home/vanquan/client/build-win32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e063e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_e063e.dir/build.make CMakeFiles/cmTC_e063e.dir/build
+gmake[1]: Entering directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e063e.dir/CheckFunctionExists.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=timegm   -o CMakeFiles/cmTC_e063e.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_e063e.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e063e.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_e063e.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_e063e.dir/objects.a @CMakeFiles/cmTC_e063e.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=timegm    -Wl,--whole-archive CMakeFiles/cmTC_e063e.dir/objects.a -Wl,--no-whole-archive  -o cmTC_e063e.exe -Wl,--out-implib,libcmTC_e063e.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_e063e.dir/linklibs.rsp
+CMakeFiles/cmTC_e063e.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0xc): undefined reference to `timegm'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e063e.dir/build.make:99: recipe for target 'cmTC_e063e.exe' failed
+gmake[1]: *** [cmTC_e063e.exe] Error 1
+gmake[1]: Leaving directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_e063e/fast' failed
+gmake: *** [cmTC_e063e/fast] Error 2
+
+
+Determining if the function strerror_r exists failed with the following output:
+Change Dir: /home/vanquan/client/build-win32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_67005/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_67005.dir/build.make CMakeFiles/cmTC_67005.dir/build
+gmake[1]: Entering directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_67005.dir/CheckFunctionExists.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=strerror_r   -o CMakeFiles/cmTC_67005.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_67005.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67005.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_67005.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_67005.dir/objects.a @CMakeFiles/cmTC_67005.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=strerror_r    -Wl,--whole-archive CMakeFiles/cmTC_67005.dir/objects.a -Wl,--no-whole-archive  -o cmTC_67005.exe -Wl,--out-implib,libcmTC_67005.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_67005.dir/linklibs.rsp
+CMakeFiles/cmTC_67005.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0xc): undefined reference to `strerror_r'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_67005.dir/build.make:99: recipe for target 'cmTC_67005.exe' failed
+gmake[1]: *** [cmTC_67005.exe] Error 1
+gmake[1]: Leaving directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_67005/fast' failed
+gmake: *** [cmTC_67005/fast] Error 2
+
+
+Determining if the function utimes exists failed with the following output:
+Change Dir: /home/vanquan/client/build-win32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_03063/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_03063.dir/build.make CMakeFiles/cmTC_03063.dir/build
+gmake[1]: Entering directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_03063.dir/CheckFunctionExists.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=utimes   -o CMakeFiles/cmTC_03063.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_03063.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_03063.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_03063.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_03063.dir/objects.a @CMakeFiles/cmTC_03063.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=utimes    -Wl,--whole-archive CMakeFiles/cmTC_03063.dir/objects.a -Wl,--no-whole-archive  -o cmTC_03063.exe -Wl,--out-implib,libcmTC_03063.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_03063.dir/linklibs.rsp
+CMakeFiles/cmTC_03063.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0xc): undefined reference to `utimes'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_03063.dir/build.make:99: recipe for target 'cmTC_03063.exe' failed
+gmake[1]: *** [cmTC_03063.exe] Error 1
+gmake[1]: Leaving directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_03063/fast' failed
+gmake: *** [cmTC_03063/fast] Error 2
+
+
+Determining if the function lstat exists failed with the following output:
+Change Dir: /home/vanquan/client/build-win32/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_7f9f4/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_7f9f4.dir/build.make CMakeFiles/cmTC_7f9f4.dir/build
+gmake[1]: Entering directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_7f9f4.dir/CheckFunctionExists.c.obj
+/usr/bin/i686-w64-mingw32-gcc    -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=lstat   -o CMakeFiles/cmTC_7f9f4.dir/CheckFunctionExists.c.obj   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_7f9f4.exe
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7f9f4.dir/link.txt --verbose=1
+/usr/bin/cmake -E remove -f CMakeFiles/cmTC_7f9f4.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/cmTC_7f9f4.dir/objects.a @CMakeFiles/cmTC_7f9f4.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-gcc   -Wall -Wextra -Wshadow -Wmissing-prototypes -Wunused -Wfloat-equal -Wpointer-arith -Wwrite-strings -Wformat-security -Wmissing-format-attribute -Wmissing-format-attribute -D_GNU_SOURCE -D__STDC_FORMAT_MACROS=1 -D_FILE_OFFSET_BITS=64 -DCHECK_FUNCTION_EXISTS=lstat    -Wl,--whole-archive CMakeFiles/cmTC_7f9f4.dir/objects.a -Wl,--no-whole-archive  -o cmTC_7f9f4.exe -Wl,--out-implib,libcmTC_7f9f4.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/cmTC_7f9f4.dir/linklibs.rsp
+CMakeFiles/cmTC_7f9f4.dir/objects.a(CheckFunctionExists.c.obj):CheckFunctionExists.c:(.text+0xc): undefined reference to `lstat'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_7f9f4.dir/build.make:99: recipe for target 'cmTC_7f9f4.exe' failed
+gmake[1]: *** [cmTC_7f9f4.exe] Error 1
+gmake[1]: Leaving directory '/home/vanquan/client/build-win32/CMakeFiles/CMakeTmp'
+Makefile:126: recipe for target 'cmTC_7f9f4/fast' failed
+gmake: *** [cmTC_7f9f4/fast] Error 2
+
+

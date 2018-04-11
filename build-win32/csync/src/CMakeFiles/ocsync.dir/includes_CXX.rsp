@@ -1,0 +1,1 @@
+-I/home/vanquan/client/build-win32/csync/src -I/home/vanquan/client/csync/src -I/home/vanquan/client/src/3rdparty/sqlite3 -I/home/vanquan/client/build-win32 -I/home/vanquan/client/build-win32/csync -I/home/vanquan/client -I/home/vanquan/client/csync/src/std 

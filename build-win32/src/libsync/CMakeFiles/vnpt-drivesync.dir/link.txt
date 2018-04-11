@@ -1,0 +1,3 @@
+/usr/bin/cmake -E remove -f CMakeFiles/vnpt-drivesync.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/vnpt-drivesync.dir/objects.a @CMakeFiles/vnpt-drivesync.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++    -Wall -Wextra -pedantic -Wno-long-long -std=c++0x -Wpedantic  -shared -o ../../bin/libvnpt-drivesync.dll -Wl,--out-implib,libvnpt-drivesync.dll.a -Wl,--major-image-version,2,--minor-image-version,3 -Wl,--whole-archive CMakeFiles/vnpt-drivesync.dir/objects.a -Wl,--no-whole-archive @CMakeFiles/vnpt-drivesync.dir/linklibs.rsp

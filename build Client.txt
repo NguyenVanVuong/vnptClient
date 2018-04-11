@@ -1,0 +1,19 @@
+
+cd client/admin/win/docker
+
+sudo yzpper install docker
+sudo systemctl start docker
+sudo docker run hello-world
+
+
+sudo docker build -t vnptcloudstorage-client-win32:2.2.3 .
+
+cd.. (vanquan@linux-re53:~/client> )
+
+
+sudo docker run -v "$PWD:/home/vanquan/client" vnptcloudstorage-client-win32:2.2.3 /home/vanquan/client/admin/win/docker/build.sh vanquan
+
+
+
+
+sudo /usr/sbin/usermod -a -G docker <username>

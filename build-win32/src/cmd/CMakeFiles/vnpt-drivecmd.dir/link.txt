@@ -1,0 +1,3 @@
+/usr/bin/cmake -E remove -f CMakeFiles/vnpt-drivecmd.dir/objects.a
+/usr/bin/i686-w64-mingw32-ar cr CMakeFiles/vnpt-drivecmd.dir/objects.a @CMakeFiles/vnpt-drivecmd.dir/objects1.rsp
+/usr/bin/i686-w64-mingw32-g++   -Wall -Wextra -pedantic -Wno-long-long -std=c++0x -Wpedantic   -Wl,--whole-archive CMakeFiles/vnpt-drivecmd.dir/objects.a -Wl,--no-whole-archive  -o ../../bin/vnpt-drivecmd.exe -Wl,--out-implib,libvnpt-drivecmd.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles/vnpt-drivecmd.dir/linklibs.rsp
